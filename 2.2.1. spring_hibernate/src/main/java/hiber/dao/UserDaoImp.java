@@ -37,9 +37,9 @@ public class UserDaoImp implements UserDao {
       List<Car> cars = query1.list();
 
       Car car = cars.get(0);
-      String hql2 = "FROM User U WHERE U.car = " + car.getId();
-      Query query2 = sessionFactory.getCurrentSession().createQuery(hql2);
-      List<User> users = query2.list();
-      return users.get(0);
+//      String hql2 = "FROM User U WHERE U.car = " + car.getId();
+//      Query query2 = sessionFactory.getCurrentSession().createQuery(hql2);
+//      List<User> users = query2.list();
+      return car.getUser();
    }
 }

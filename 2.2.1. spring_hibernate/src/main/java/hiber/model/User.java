@@ -35,8 +35,8 @@ public class User {
       this.firstName = firstName;
       this.lastName = lastName;
       this.email = email;
-      car.setUser(this);
       this.car = car;
+      car.setUser(this);
    }
 
    public Car getCar() {
